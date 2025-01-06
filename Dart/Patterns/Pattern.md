@@ -224,7 +224,3 @@ if (json case {'user': [String name, int age]}) {
 ```
 
 이렇게 하면 `json`이 특정 형태를 가지는지 검증하고, 동시에 필요한 데이터를 변수에 바인딩할 수 있습니다.
-
-## 관련 자료
-
-- [Dart 패턴 문서](https://dart.dev/language/patterns)
