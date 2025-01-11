@@ -77,12 +77,23 @@ Charlie has 7 years of experience.
 
 ### Iterable의 forEach 메서드
 
-`Iterable` 클래스는 `forEach` 메서드를 제공하여 컬렉션의 각 요소에 대해 함수를 실행할 수 있습니다:
+`forEach` 메서드는 `Iterable`의 각 요소에 대해 주어진 함수를 실행합니다. 이는 컬렉션의 모든 요소를 반복하며 특정 작업을 수행할 때 유용하게 사용됩니다.
 
 ```dart
-var collection = [1, 2, 3];
-collection.forEach(print); // 출력: 1, 2, 3
+var numbers = [1, 2, 3, 4, 5];
+numbers.forEach((number) {
+  print(number * 2); // 출력: 2, 4, 6, 8, 10
+});
+
+var names = ['Alice', 'Bob', 'Charlie'];
+names.forEach((name) => print('Hello, $name!')); 
+// 출력: 
+// Hello, Alice!
+// Hello, Bob!
+// Hello, Charlie!
 ```
+
+`forEach`는 컬렉션의 각 요소에 대해 함수를 호출하지만, 루프를 중단하거나 건너뛰는 기능은 제공하지 않습니다. 루프 제어가 필요할 경우 `for` 또는 `while` 루프를 사용하는 것이 적합합니다.
 
 ## While 및 Do-While 루프
 
