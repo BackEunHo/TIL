@@ -66,7 +66,7 @@ b ??= value; // b가 null일 때만 value 할당
 | 연산자 | 의미                                    |
 | ------ | --------------------------------------- |
 | !_expr_ | 표현식 반전 (false를 true로, 반대도 동일) |
-| \||    | 논리 OR                                 |
+| \|\|    | 논리 OR                                 |
 | &&     | 논리 AND                                |
 
 ## 비트 및 시프트 연산자
@@ -106,8 +106,8 @@ Dart는 간결하게 표현식을 평가할 수 있는 두 가지 연산자를 �
 예제:
 
 ```dart
-var visibility = isPublic ? 'public' : 'private';
-String playerName(String? name) => name ?? 'Guest';
+var visibility = isPublic ? 'public' : 'private'; // isPublic이 true면 visibility는 'public', false면 'private'
+String playerName(String? name) => name ?? 'Guest'; // name이 null이면 'Guest'를 반환, 아니면 name을 반환
 ```
 
 ## 캐스케이드 표기법
